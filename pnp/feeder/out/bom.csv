@@ -1,0 +1,34 @@
+kind,item,qty_per_lane,qty_per_bank,total_8_lanes,mass_g_each
+buy,"Compression spring OD 3 x 0.3 wire x L0 8, ~0.5 N/mm (pawls)",2,0,16,0.1
+buy,"Compression spring OD 5 x 0.4 wire x L0 9, ~0.75 N/mm (pinch, 1.5 N)",1,0,8,0.1
+buy,O-ring 12 x 1.5 NBR 70 (roller tyres),4,0,32,0.1
+buy,"One-way needle bearing HF0612 (6 x 10 x 12), drive roller + pinch roller",2,0,16,2.5
+buy,"Servo MG90S (metal gears + spline, SG90 size), 180 deg (tape advance)",1,0,8,9.0
+buy,Set screw M2 x 5 (pawl pivots),2,0,16,0.1
+buy,Threaded rod M8 x 212 + 2 nuts + 2 washers (reel rack),0,2,2,83.8
+print,Cover tape waste bin (printed PETG),0,1,1,26.5
+print,"Empty-tape exit chute, 8 lanes (printed PETG)",0,1,1,48.2
+print,"Feeder v3.0 cover plate, bayonet rails (printed PETG)",1,0,8,1.2
+print,"Feeder v3.0 cover tape guide bar D2.9 with head, pushed into the post (printed PETG)",1,0,8,0.2
+print,Feeder v3.0 idler gear 36T m1 with axle stub (printed PETG),1,0,8,1.6
+print,Feeder v3.0 main body (printed PETG),1,0,8,35.0
+print,"Feeder v3.0 pawl, feed + detent (printed PETG)",2,0,16,0.1
+print,"Feeder v3.0 pinch axle D6 x 14, pressed into the yoke (printed PETG)",1,0,8,0.4
+print,Feeder v3.0 pinch yoke (printed PETG),1,0,8,0.4
+print,"Feeder v3.0 pinion 14T m1 with the D6 drive shaft, one part (printed PETG)",1,0,8,0.6
+print,Feeder v3.0 rack m1 on the slider (printed PETG),1,0,8,0.3
+print,"Feeder v3.0 roller body, drive + pinch (printed PETG)",2,0,16,0.9
+print,"Feeder v3.0 servo gear sector 13T m1 on the spline (printed PETG, replaces the horn)",1,0,8,0.3
+print,Feeder v3.0 side plate (printed PETG),1,0,8,13.1
+print,Feeder v3.0 slider (printed PETG),1,0,8,3.8
+print,Reel hub / spacer (printed PETG),0,8,8,3.5
+print,Reel rack side plate (printed PETG),0,2,2,20.1
+print,Waste bin leg (printed PETG),0,2,2,2.7
+fastener,M2x6 SHCS (take-up rack -> slider),2,0,16,0.0
+fastener,"M2x6 screw (servo gear on the spline, from the servo kit)",1,0,8,0.0
+fastener,M2x8 countersunk DIN 965 (cover plate upstand -> tower),2,0,16,0.0
+fastener,M3 heat-set insert (lane bottom + side plate joint),6,0,48,0.0
+fastener,M3x10 SHCS (side plate -> body),3,0,24,0.0
+fastener,M3x20 SHCS (chute -> plate),0,6,6,0.0
+fastener,M3x50 SHCS + washer (bin + leg -> plate),0,2,2,0.0
+fastener,"M3x8 SHCS (tooling plate -> lane, from below)",3,0,24,0.0

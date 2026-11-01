@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><style>text{font-family:Arial,sans-serif;fill:#202a35}.title{font-size:38px;font-weight:bold;fill:#18334d}.box{fill:#f3f6f8;stroke:#205276;stroke-width:3}.ac{stroke:#c64e3b;stroke-width:7;fill:none}.dc{stroke:#dc751d;stroke-width:7;fill:none}.logic{stroke:#27845a;stroke-width:6;fill:none}.pe{stroke:#547b32;stroke-width:5;fill:none;stroke-dasharray:10 8}.label{font-size:22px;font-weight:bold}.small{font-size:17px;fill:#526270}</style></defs>
+<rect width="1600" height="900" fill="#fff"/><text x="70" y="70" class="title">TEVO-BW · power and control architecture · concept A</text>
+<rect x="70" y="150" width="250" height="130" rx="12" class="box"/><text x="95" y="205" class="label">AC INPUT</text><text x="95" y="242" class="small">switch · protection</text>
+<rect x="410" y="130" width="280" height="170" rx="12" class="box"/><text x="440" y="190" class="label">LRS-350-24</text><text x="440" y="230" class="small">24 V · 14.6 A max</text><text x="440" y="260" class="small">verify load &amp; cooling</text>
+<rect x="790" y="145" width="290" height="130" rx="12" class="box"/><text x="820" y="200" class="label">24 V FUSED BUS</text><text x="820" y="240" class="small">branch protection per load</text>
+<rect x="1190" y="80" width="320" height="125" rx="12" class="box"/><text x="1220" y="130" class="label">Motion board / drivers</text><text x="1220" y="168" class="small">24 V only if rated</text>
+<rect x="1190" y="250" width="320" height="125" rx="12" class="box"/><text x="1220" y="300" class="label">Pump + vacuum valve</text><text x="1220" y="338" class="small">verify voltage / inrush</text>
+<rect x="790" y="390" width="290" height="125" rx="12" class="box"/><text x="820" y="440" class="label">DC/DC 24 → 5 V</text><text x="820" y="478" class="small">servo rail ≥ 8 A concept</text>
+<rect x="1190" y="405" width="320" height="125" rx="12" class="box"/><text x="1220" y="455" class="label">Feeder servos × 8</text><text x="1220" y="493" class="small">external rail, never USB</text>
+<rect x="790" y="600" width="290" height="125" rx="12" class="box"/><text x="820" y="650" class="label">Official USB-C PSU</text><text x="820" y="688" class="small">5 V / 5 A · 27 W</text>
+<rect x="1190" y="600" width="320" height="125" rx="12" class="box"/><text x="1220" y="650" class="label">Raspberry Pi 5</text><text x="1220" y="688" class="small">OpenPnP ARM64 camera gate</text>
+<path d="M320 215H410" class="ac"/><path d="M320 248H350V665H790" class="ac"/><path d="M690 215H790" class="dc"/><path d="M1080 185H1130V142H1190M1130 210V312H1190" class="dc"/><path d="M930 275V390" class="dc"/><path d="M1080 452H1190" class="dc"/><path d="M1080 665H1190" class="logic"/>
+<text x="70" y="805" class="small">PE bonds to metal enclosure, door and PSU PE terminal. E-stop drops drive power/enable; SBC stays powered for logging.</text><text x="70" y="840" class="small">Concept only: select AC protection, DC fuses, wire gauge, terminals and contactor from verified load data and local code.</text>
+</svg>

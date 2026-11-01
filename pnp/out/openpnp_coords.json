@@ -1,0 +1,184 @@
+{
+  "units": "mm, machine frame (TS 4): origin = nozzle at home, Z 0 = home switch, Z down negative",
+  "travel": {
+    "X": 453.0,
+    "Y": 382.6,
+    "Z": -40.0
+  },
+  "nozzle_to_down_camera": [
+    2.0,
+    57.0
+  ],
+  "pcb_top_Z": -36.4,
+  "feeders": [
+    {
+      "lane": 1,
+      "type": "TBW-Feeder v2.1 (servo advance + peel, 2/4 mm per feed)",
+      "feed_gcode": "M600 N0 F4",
+      "pick_xyz": [
+        426.0,
+        62.55,
+        -22.6
+      ]
+    },
+    {
+      "lane": 2,
+      "type": "TBW-Feeder v2.1 (servo advance + peel, 2/4 mm per feed)",
+      "feed_gcode": "M600 N1 F4",
+      "pick_xyz": [
+        426.0,
+        84.55,
+        -22.6
+      ]
+    },
+    {
+      "lane": 3,
+      "type": "TBW-Feeder v2.1 (servo advance + peel, 2/4 mm per feed)",
+      "feed_gcode": "M600 N2 F4",
+      "pick_xyz": [
+        426.0,
+        106.55,
+        -22.6
+      ]
+    },
+    {
+      "lane": 4,
+      "type": "TBW-Feeder v2.1 (servo advance + peel, 2/4 mm per feed)",
+      "feed_gcode": "M600 N3 F4",
+      "pick_xyz": [
+        426.0,
+        128.55,
+        -22.6
+      ]
+    },
+    {
+      "lane": 5,
+      "type": "TBW-Feeder v2.1 (servo advance + peel, 2/4 mm per feed)",
+      "feed_gcode": "M600 N4 F4",
+      "pick_xyz": [
+        426.0,
+        150.55,
+        -22.6
+      ]
+    },
+    {
+      "lane": 6,
+      "type": "TBW-Feeder v2.1 (servo advance + peel, 2/4 mm per feed)",
+      "feed_gcode": "M600 N5 F4",
+      "pick_xyz": [
+        426.0,
+        172.55,
+        -22.6
+      ]
+    },
+    {
+      "lane": 7,
+      "type": "TBW-Feeder v2.1 (servo advance + peel, 2/4 mm per feed)",
+      "feed_gcode": "M600 N6 F4",
+      "pick_xyz": [
+        426.0,
+        194.55,
+        -22.6
+      ]
+    },
+    {
+      "lane": 8,
+      "type": "TBW-Feeder v2.1 (servo advance + peel, 2/4 mm per feed)",
+      "feed_gcode": "M600 N7 F4",
+      "pick_xyz": [
+        426.0,
+        216.55,
+        -22.6
+      ]
+    }
+  ],
+  "magazine": [
+    {
+      "pocket": 1,
+      "engage_xyz": [
+        434.0,
+        288.3,
+        -22.0
+      ]
+    },
+    {
+      "pocket": 2,
+      "engage_xyz": [
+        434.0,
+        306.3,
+        -22.0
+      ]
+    },
+    {
+      "pocket": 3,
+      "engage_xyz": [
+        434.0,
+        324.3,
+        -22.0
+      ]
+    },
+    {
+      "pocket": 4,
+      "engage_xyz": [
+        434.0,
+        342.3,
+        -22.0
+      ]
+    },
+    {
+      "pocket": 5,
+      "engage_xyz": [
+        434.0,
+        360.3,
+        -22.0
+      ]
+    },
+    {
+      "pocket": 6,
+      "engage_xyz": [
+        434.0,
+        378.3,
+        -22.0
+      ]
+    }
+  ],
+  "up_camera": {
+    "xyz_hover": [
+      434.0,
+      249.3,
+      -31.5
+    ]
+  },
+  "pcb": {
+    "datum_corner": [
+      136.0,
+      161.3,
+      -36.4
+    ],
+    "fiducials": [
+      [
+        142.0,
+        167.3
+      ],
+      [
+        290.0,
+        167.3
+      ],
+      [
+        142.0,
+        255.3
+      ]
+    ],
+    "datum_pins": [
+      [
+        156.0,
+        159.8
+      ],
+      [
+        276.0,
+        159.8
+      ]
+    ]
+  },
+  "safe_z": -16.0
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1300" viewBox="0 0 1800 1300">
+<defs><style>text{font-family:Arial,sans-serif;fill:#202a35}.h{font-size:34px;font-weight:bold;fill:#18334d}.sh{font-size:23px;font-weight:bold;fill:#205276}.box{fill:#f5f7f8;stroke:#205276;stroke-width:3}.warn{fill:#fff1e0;stroke:#dc751d;stroke-width:3}.safe{fill:#eaf5ee;stroke:#27845a;stroke-width:3}.t{font-size:18px;font-weight:bold}.s{font-size:15px;fill:#526270}.ac{stroke:#c64e3b;stroke-width:6;fill:none}.dc{stroke:#dc751d;stroke-width:6;fill:none}.sig{stroke:#276c99;stroke-width:4;fill:none}.pe{stroke:#547b32;stroke-width:5;fill:none}</style></defs>
+<rect width="1800" height="1300" fill="white"/><text x="55" y="55" class="h">TEVO-BW · detailed electrical wiring · concept A</text>
+<text x="55" y="105" class="sh">A. AC input, protective earth and separate low-voltage supplies</text>
+<rect x="55" y="145" width="190" height="125" rx="9" class="box"/><text x="80" y="185" class="t">X1 AC IN</text><text x="80" y="215" class="s">L / N / PE</text><text x="80" y="240" class="s">rating per site</text>
+<rect x="300" y="145" width="200" height="125" rx="9" class="box"/><text x="325" y="185" class="t">Q1 isolator</text><text x="325" y="215" class="s">2-pole L/N*</text><text x="325" y="240" class="s">PE not switched</text>
+<rect x="555" y="145" width="180" height="125" rx="9" class="warn"/><text x="580" y="185" class="t">F0 / AC protect</text><text x="580" y="215" class="s">size from code</text><text x="580" y="240" class="s">not yet selected</text>
+<rect x="790" y="145" width="210" height="125" rx="9" class="box"/><text x="815" y="185" class="t">TB-AC</text><text x="815" y="215" class="s">protected L / N</text><text x="815" y="240" class="s">AC distribution</text>
+<rect x="1070" y="120" width="270" height="155" rx="9" class="warn"/><text x="1095" y="165" class="t">PS1: 24 V PSU</text><text x="1095" y="200" class="s">LRS-350-24 candidate</text><text x="1095" y="228" class="s">check input selector</text><text x="1095" y="255" class="s">FG / PE to PE bar</text>
+<rect x="1410" y="120" width="330" height="155" rx="9" class="safe"/><text x="1435" y="165" class="t">PS2: host PSU</text><text x="1435" y="200" class="s">official Pi USB-C PSU</text><text x="1435" y="228" class="s">or x86 host supply</text><text x="1435" y="255" class="s">separate AC branch</text>
+<path d="M245 205H300M500 205H555M735 205H790M1000 185H1070M895 145V100H1500V120" class="ac"/>
+<rect x="55" y="300" width="410" height="100" rx="9" class="safe"/><text x="80" y="337" class="t">PE BAR / CHASSIS STUD</text><text x="80" y="367" class="s">X1 PE → cabinet → door bond → PS1 FG</text>
+<path d="M145 270V300" class="pe"/>
+<text x="55" y="455" class="sh">B. Protected 24 V distribution, feeder rail and E-stop path</text>
+<rect x="55" y="500" width="230" height="140" rx="9" class="box"/><text x="80" y="545" class="t">TB24+ / TB0</text><text x="80" y="577" class="s">24 V star point</text><text x="80" y="607" class="s">separate returns</text>
+<rect x="360" y="490" width="170" height="95" rx="9" class="warn"/><text x="385" y="530" class="t">F1 TBD</text><text x="385" y="558" class="s">motion fuse</text>
+<rect x="590" y="490" width="190" height="95" rx="9" class="box"/><text x="615" y="530" class="t">K1 contact</text><text x="615" y="558" class="s">drops motion rail</text>
+<rect x="840" y="475" width="270" height="125" rx="9" class="box"/><text x="865" y="520" class="t">X4 motion board</text><text x="865" y="550" class="s">VIN+ / 0V / DRIVER_EN</text><text x="865" y="578" class="s">24 V only if rated</text>
+<rect x="360" y="625" width="170" height="95" rx="9" class="warn"/><text x="385" y="665" class="t">F2 TBD</text><text x="385" y="693" class="s">vacuum fuse</text>
+<rect x="590" y="625" width="210" height="95" rx="9" class="box"/><text x="615" y="665" class="t">X5 pump / valve</text><text x="615" y="693" class="s">check inrush / diode</text>
+<rect x="360" y="765" width="170" height="100" rx="9" class="warn"/><text x="385" y="805" class="t">F3 TBD</text><text x="385" y="835" class="s">DC/DC input</text>
+<rect x="590" y="755" width="235" height="115" rx="9" class="box"/><text x="615" y="800" class="t">DC/DC1 24→5 V</text><text x="615" y="832" class="s">regulated 5.0 V servo rail</text><text x="615" y="858" class="s">target capacity 8 A concept</text>
+<rect x="880" y="755" width="170" height="100" rx="9" class="warn"/><text x="905" y="795" class="t">F4 TBD</text><text x="905" y="825" class="s">servo rail fuse</text>
+<rect x="1110" y="735" width="280" height="135" rx="9" class="safe"/><text x="1135" y="780" class="t">X3 Nano IO shield</text><text x="1135" y="812" class="s">external V+ / GND / D2-D9</text><text x="1135" y="842" class="s">USB VBUS not tied to V+</text>
+<path d="M285 540H360M530 538H590M780 538H840M285 570H320V673H360M530 673H590M285 600H335V815H360M530 815H590M825 815H880M1050 805H1110M1155 275V440H165V480" class="dc"/>
+<rect x="55" y="735" width="235" height="135" rx="9" class="warn"/><text x="80" y="780" class="t">S0 E-STOP</text><text x="80" y="812" class="s">dual NC channels</text><text x="80" y="842" class="s">latching button</text>
+<rect x="55" y="920" width="285" height="115" rx="9" class="safe"/><text x="80" y="965" class="t">SR1 safety relay</text><text x="80" y="997" class="s">K1 coil + DRIVER_EN path</text>
+<path d="M172 870V920M340 976H500V570H640V560" class="sig"/>
+<rect x="1260" y="905" width="450" height="105" rx="9" class="box"/><text x="1285" y="950" class="t">TB0 return / signal reference</text><text x="1285" y="982" class="s">separate motor / pump / buck returns</text>
+<text x="875" y="960" class="s">F1-F4 shown as IDs only, ratings TBD.</text><text x="875" y="990" class="s">No motor current through Nano/Pi ground.</text>
+<text x="55" y="1110" class="sh">Wire color key</text><path d="M55 1150H150" class="ac"/><text x="165" y="1158" class="s">AC L/N</text><path d="M330 1150H425" class="dc"/><text x="440" y="1158" class="s">24 V / 5 V DC</text><path d="M650 1150H745" class="sig"/><text x="760" y="1158" class="s">signal / safety</text><path d="M970 1150H1065" class="pe"/><text x="1080" y="1158" class="s">protective earth</text>
+<text x="55" y="1220" class="s">*Q1 poles depend on local supply rules. Have the mains section designed/installed by a qualified electrician.</text><text x="55" y="1250" class="s">Do not energize until actual PSU, board, pump and motor ratings are recorded and each branch protection is selected.</text>
+</svg>

@@ -1,0 +1,11 @@
+# Apply PnP colours after opening pnp_machine.FCStd in the FreeCAD GUI (Macro > Execute).
+import FreeCAD as App
+import FreeCADGui as Gui
+doc = App.ActiveDocument
+for o in doc.Objects:
+    src = "PartColor" if hasattr(o, "PartColor") else "PnpColor"
+    if hasattr(o, src) and o.ViewObject is not None:
+        c = getattr(o, src)[:3]
+        o.ViewObject.ShapeColor = c
+        o.ViewObject.LineColor = (0.05, 0.05, 0.06)
+Gui.SendMsgToActiveView("ViewFit")

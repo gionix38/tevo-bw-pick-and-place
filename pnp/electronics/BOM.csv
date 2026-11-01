@@ -1,0 +1,15 @@
+Item,Qty,Specification,Status,Notes
+Main 24V PSU,1,Mean Well LRS-350-24 24V 14.6A 350.4W,PROPOSED,Confirm measured load and actual donor board rating
+OpenPnP host,1,x86-64 mini-PC Linux 64-bit,RECOMMENDED,Official OpenPnP Linux packages list x86/x64
+Aux SBC,1,Raspberry Pi 5 preferably 8GB with active cooling,OPTIONAL,Auxiliary/logger by default; ARM64 OpenPnP is experimental
+Aux SBC PSU,1,Official Raspberry Pi 27W USB-C supply 5V 5A,OPTIONAL,Separate AC branch; do not feed 24V into Pi
+Servo DC/DC,1,24V input 5.0V output rated >=8A,PROPOSED,Choose exact converter after servo peak/stall measurements
+Motion branch protection,1,DC fuse/holder sized to motion board and conductors,TBD,Actual board/drivers and inrush unknown
+Vacuum branch protection,1,DC fuse/holder sized to pump/valve,TBD,Pump/valve datasheets and inrush unknown
+Servo branch protection,1,DC fuse/holder sized to converter and wiring,TBD,Coordinate with converter rating and wire ampacity
+Emergency stop,1,2 NC contacts with suitable contactor/safety relay,PROPOSED,Verify safety category and DC interrupt rating
+Feeder logic,1,Arduino Nano + IO shield,EXISTING DESIGN,Check external servo power jumper before connection
+Servo bulk capacitor,1,1000uF 10V electrolytic,EXISTING DESIGN,Place at servo distribution point with correct polarity
+Enclosure,1,Metal cabinet 300x240x120mm concept,PROPOSED,Final size and thermal design require component fit check
+DIN rail terminals,As required,Finger-safe PE and DC distribution terminals,PROPOSED,AC/DC zones separated
+Cable glands,As required,Strain relief matched to cables,PROPOSED,Separate motor power and USB/camera routing

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><style>text{font-family:Arial,sans-serif;fill:#202a35}.title{font-size:38px;font-weight:bold;fill:#18334d}.metal{fill:#e8edf1;stroke:#455966;stroke-width:5}.device{fill:#f7f8f9;stroke:#205276;stroke-width:3}.hot{fill:#fff1e0;stroke:#dc751d;stroke-width:3}.safe{fill:#eaf5ee;stroke:#27845a;stroke-width:3}.label{font-size:22px;font-weight:bold}.small{font-size:17px;fill:#526270}.dim{stroke:#526270;stroke-width:2;fill:none}</style></defs>
+<rect width="1600" height="1000" fill="#fff"/><text x="70" y="70" class="title">Electronics enclosure · 300 × 240 × 120 mm concept</text>
+<!-- three-quarter enclosure: box --> <path d="M170 250 L920 250 L1080 155 L330 155 Z" fill="#f4f6f8" stroke="#455966" stroke-width="5"/><path d="M170 250 L920 250 L920 745 L170 745 Z" class="metal"/><path d="M920 250 L1080 155 L1080 640 L920 745 Z" fill="#d5dde3" stroke="#455966" stroke-width="5"/>
+<!-- interior plate --> <rect x="230" y="300" width="620" height="395" rx="8" fill="#fff" stroke="#9aa9b4" stroke-width="3"/>
+<rect x="270" y="350" width="250" height="145" rx="8" class="hot"/><text x="295" y="400" class="label">24 V PSU</text><text x="295" y="438" class="small">LRS-350-24</text><text x="295" y="468" class="small">AC zone · airflow</text>
+<rect x="565" y="350" width="235" height="145" rx="8" class="device"/><text x="585" y="400" class="label">DIN DC bus</text><text x="585" y="438" class="small">fuses / terminals</text><text x="585" y="468" class="small">24 V branches</text>
+<rect x="270" y="530" width="250" height="115" rx="8" class="device"/><text x="292" y="578" class="label">DC/DC 5 V</text><text x="292" y="615" class="small">servo supply</text>
+<rect x="565" y="530" width="235" height="115" rx="8" class="safe"/><text x="590" y="578" class="label">Pi 5 bay</text><text x="590" y="615" class="small">vented · isolated</text>
+<path d="M205 695H850" stroke="#547b32" stroke-width="8"/><text x="265" y="682" class="small">PE bar / enclosure bond</text>
+<circle cx="950" cy="310" r="18" fill="#dc751d"/><circle cx="950" cy="375" r="18" fill="#205276"/><circle cx="950" cy="440" r="18" fill="#27845a"/><text x="988" y="318" class="small">AC cable gland</text><text x="988" y="383" class="small">24 V motor cable</text><text x="988" y="448" class="small">USB / cameras</text>
+<!-- dimensions --> <path d="M170 790H920M170 780V805M920 780V805" class="dim"/><text x="500" y="830" class="label">300 mm</text><path d="M125 250V745M115 250H140M115 745H140" class="dim"/><text x="75" y="510" class="label" transform="rotate(-90 75 510)">240 mm</text>
+<text x="170" y="900" class="small">Concept arrangement only. Keep mains and low-voltage wiring separated; provide finger-safe terminals, strain relief, ventilation and PE bonding.</text>
+<text x="170" y="935" class="small">Pi 5 receives its own official USB-C PSU. Final internal spacing depends on verified PSU, terminal and safety relay dimensions.</text>
+</svg>
